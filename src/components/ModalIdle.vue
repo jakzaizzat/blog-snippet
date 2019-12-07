@@ -9,11 +9,38 @@
             </div>
             <div class="p-3">
                 <p>You have left this browser idle for 10 minutes.</p>
-                <p>10 second left</p>
+                <p>{{ second }} second left</p>
             </div>
         </div>
     </div>
 </template>
+
+<script>
+    export default {
+        data() {
+            return {
+                time: 10000
+            }
+        },
+        computed: {
+            second() {
+                return this.time / 1000;
+            }
+        },
+        created() {
+            let timerId = setInterval(() => {
+                this.time -= 1000;
+                if (!this.$store.state.idleVue.isIdle) clearInterval(timerId);
+
+                if (this.time < 1) {
+                    clearInterval(timerId);
+                    // Your logout function should be over here
+                    alert('logout user....');
+                }
+            }, 1000);
+        }
+    }
+</script>
 
 <style lang="postcss" scoped>
     .overlay {
