@@ -5,6 +5,9 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+
+import "./assets/css/main.css";
+
 new Vue({
   render: h => h(App),
   router,
