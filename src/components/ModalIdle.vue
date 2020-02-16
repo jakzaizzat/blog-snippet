@@ -10,6 +10,7 @@
             <div class="p-3">
                 <p>You have left this browser idle for 10 minutes.</p>
                 <p>{{ second }} second left</p>
+                <button @click.prevent="close">Close</button>
             </div>
         </div>
     </div>
@@ -27,6 +28,11 @@
                 return this.time / 1000;
             }
         },
+        methods: {
+            close() {
+                this.$emit('close')
+            }
+        },
         created() {
             let timerId = setInterval(() => {
                 this.time -= 1000;
@@ -35,7 +41,7 @@
                 if (this.time < 1) {
                     clearInterval(timerId);
                     // Your logout function should be over here
-                    alert('logout user....');
+                    //alert('logout user....');
                 }
             }, 1000);
         }
