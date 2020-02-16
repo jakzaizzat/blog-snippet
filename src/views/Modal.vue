@@ -1,33 +1,40 @@
 <template>
-  <div class="overlay">
-    <div class="modal">
-      <div class="flex items-center justify-between p-3 font-bold">
-        <span>Modal Title</span>
-        <button>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width="24"
-            height="24"
-          >
-            <path
-              class="heroicon-ui"
-              d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z"
-            />
-          </svg>
-        </button>
-      </div>
-      <div class="p-3">
-          <div class="mb-4">Modal Body</div>
-          <button class="bg-blue-500 text-white p-2 text-sm rounded">Confirm</button>
-      </div>
-    </div>
+  <div>
+<!--    <div class="overlay">-->
+<!--      <div class="modal">-->
+<!--        <div class="flex items-center justify-between p-3 font-bold">-->
+<!--          <span>Modal Title</span>-->
+<!--          <button>-->
+<!--            <svg-->
+<!--                    xmlns="http://www.w3.org/2000/svg"-->
+<!--                    viewBox="0 0 24 24"-->
+<!--                    width="24"-->
+<!--                    height="24"-->
+<!--            >-->
+<!--              <path-->
+<!--                      class="heroicon-ui"-->
+<!--                      d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z"-->
+<!--              />-->
+<!--            </svg>-->
+<!--          </button>-->
+<!--        </div>-->
+<!--        <div class="p-3">-->
+<!--          <div class="mb-4">Modal Body</div>-->
+<!--          <button class="bg-blue-500 text-white p-2 text-sm rounded">-->
+<!--            Confirm-->
+<!--          </button>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+    <button class="bg-blue-500 text-white p-2 text-sm rounded">
+      Open Modal
+    </button>
   </div>
 </template>
 
 <script>
-export default {
-};
+export default {};
 </script>
 
 <style lang="postcss" scoped>
