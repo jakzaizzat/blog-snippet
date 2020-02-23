@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "core-js": "^3.4.3",
-    "idle-vue": "^2.0.5",
     "tailwindcss": "^1.1.4",
     "vue": "^2.6.10",
     "vue-router": "^3.1.3",

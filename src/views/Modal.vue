@@ -12,7 +12,7 @@
       @click.prevent="toggleModal"
       class="bg-blue-500 text-white p-2 text-sm rounded"
     >
-      Open Modal {{ isVisibility }}
+      Open Modal
     </button>
   </div>
 </template>
