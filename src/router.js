@@ -6,6 +6,7 @@ Vue.use(Router);
 import Home from "./views/Home";
 import Profile from "./views/Profile";
 import Modal from "./views/Modal";
+import Keyword from "./views/Keyword";
 
 import MainLayout from "./layout/Main";
 
@@ -31,6 +32,11 @@ export default new Router({
           path: "/profile",
           name: "Profile",
           component: Profile
+        },
+        {
+          path: "/keyword",
+          name: "Keyword",
+          component: Keyword
         }
       ]
     }
