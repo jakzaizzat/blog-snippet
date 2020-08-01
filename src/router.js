@@ -6,6 +6,7 @@ Vue.use(Router);
 import Home from "./views/Home";
 import Profile from "./views/Profile";
 import Modal from "./views/Modal";
+import ModalAdvanced from "./views/ModalAdvanced";
 import Keyword from "./views/Keyword";
 
 import MainLayout from "./layout/Main";
@@ -27,6 +28,11 @@ export default new Router({
           path: "/modal",
           name: "Modal Page",
           component: Modal
+        },
+        {
+          path: "/modal-advanced",
+          name: "Modal Advanced Page",
+          component: ModalAdvanced
         },
         {
           path: "/profile",

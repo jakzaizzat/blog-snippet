@@ -1,5 +1,7 @@
 <template>
   <div>
+    <BaseButton type="error">Button</BaseButton>
+
     <div class="w-full  px-3 mb-6">
       <label
         class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -52,12 +54,16 @@
 <script>
 import axios from "axios";
 import { debounce } from "lodash";
+import BaseButton from "../components/BaseButton";
 
 export default {
   data: () => ({
     keyword: "",
     peoples: []
   }),
+  components: {
+    BaseButton
+  },
   methods: {
     checkName() {
       // eslint-disable-next-line no-console

@@ -4,7 +4,8 @@ import store from './store'
 import router from './router'
 
 Vue.config.productionTip = false
-
+import PortalVue from 'portal-vue'
+Vue.use(PortalVue)
 // Import TailwindCSS
 import "./assets/css/main.css";
 

@@ -1,19 +1,14 @@
 <template>
   <div>
-    <Modal
-      v-if="isVisibility"
-      title="This is new title"
-      @toggle-modal="toggleModal"
-    >
-      This is a <strong>strong</strong> slot
+    <Modal v-if="isVisibility" title="This is new title" @toggle-modal="toggleModal">
+      This is a
+      <strong>strong</strong> slot
     </Modal>
 
     <button
       @click.prevent="toggleModal"
       class="bg-blue-500 text-white p-2 text-sm rounded"
-    >
-      Open Modal
-    </button>
+    >Open Modal</button>
   </div>
 </template>
 
@@ -21,17 +16,17 @@
 import Modal from "@/components/Modal";
 export default {
   components: {
-    Modal
+    Modal,
   },
   data() {
     return {
-      isVisibility: false
+      isVisibility: false,
     };
   },
   methods: {
     toggleModal() {
       this.isVisibility = !this.isVisibility;
-    }
-  }
+    },
+  },
 };
 </script>
